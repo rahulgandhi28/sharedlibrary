@@ -8,9 +8,19 @@ pipeline{
 
               stage('maven build'){
                   steps{
-                      script{
-		    	                sh "mvn clean install"
-                      	  }
+		  echo 'Hello'
+            }
+        }
+        stage('Test') { 
+            steps {
+                echo 'rahul'
+            }
+        }
+        stage('Deploy') { 
+            steps {
+                echo 'gandhi'
+            }
+                      
                	     }  
                  }	
                  
